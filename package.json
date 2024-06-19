@@ -1,0 +1,31 @@
+{
+  "name": "teste-cypress",
+  "version": "1.0.0",
+  "description": "Teste Automatizado Cypress Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ingrid",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.6",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^12.2.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true,
+      "formatter": "./json-formatter/cucumber-json-formatter",
+      "output": "json-logs/report.json"
+    },
+    "filterSpecs": true,
+    "omitFiltered": true
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.1"
+  }
+}

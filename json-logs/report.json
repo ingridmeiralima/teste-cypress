@@ -1,0 +1,126 @@
+[
+  {
+    "description": "    Desejo gerenciar as tarefas",
+    "elements": [
+      {
+        "description": "",
+        "id": "api-tarefas-crud;cadastro-de-tarefa",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Cadastro de tarefa",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "eu faço uma solicitação para criar tarefa",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "o sistema deve retornar a tarefa criada com sucesso",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@tarefas",
+            "line": 1
+          },
+          {
+            "name": "@crud",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "api-tarefas-crud;listar-tarefas",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Listar tarefas",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "eu faço uma solicitação para a consulta de tarefas",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "o sistema deve retornar as tarefas com sucesso",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api",
+            "line": 1
+          },
+          {
+            "name": "@tarefas",
+            "line": 1
+          },
+          {
+            "name": "@crud",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "api-tarefas-crud",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "API Tarefas CRUD",
+    "tags": [
+      {
+        "name": "@api",
+        "line": 1
+      },
+      {
+        "name": "@tarefas",
+        "line": 1
+      },
+      {
+        "name": "@crud",
+        "line": 1
+      }
+    ],
+    "uri": "cypress\\e2e\\api\\tasks.feature"
+  }
+]
